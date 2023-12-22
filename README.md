@@ -1,4 +1,5 @@
 # Sitetransform.css
+# Note that this README is very buggy!
 Turn your bad-looking site into a great-looking site with Sitetransform.css. Make everything modern with it. **No difficult classes to remember.** And what's even better? **It's 10KB unzzipped, 2KB gzzipped!** If you need more, you can add them easily! Read this to get started.
 ## Getting started
 Download Sitetransform.css in the `sitetransform.css` folder of this repository.
