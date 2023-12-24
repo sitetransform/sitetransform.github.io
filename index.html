@@ -1,1 +1,291 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitetransform.css - Make your website modern</title>
+    <link rel="stylesheet" href="sitetransform.css/dist/sitetransform.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero {
+            height: 100vh;
+            background: linear-gradient(white, royalblue) no-repeat;
+            text-align: center;
+            border-bottom: 3px solid black;
+        }
+        h1 {
+            color: grey;
+        }
+        .hcolorpart1 {
+            color: #ccc;
+        }
+        .hcolorpart2 {
+            color: dodgerblue;
+        }
+        #docs {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Sitetransform<span class="hcolorpart1">.</span><span class="hcolorpart2">css</span></h1>
+        <p class="description">Want to transform your bad-looking site into a great-looking site? Look no further! Sitetransform.css is here to help! Little classes to remember. Best of all, its only 2KB gzipped, 10KB unzipped, so you could build faster websites.</p>
+        <code>[version] v1.0.0 </code>
+        <p>&nbsp;</p>
+        <a href="#docs" class="transbtn">Read the Docs</a>
+    </section>
+    <article id="docs">
+        <section>
+            <h2>Getting Started</h2>
+            <p>First you have to download Sitetransform.css</p>
+            <a href="sitetransform.css.zip" download="" class="transbtn">Download Sitetransform.css</a>
+            <p>Clone it from github.</p>
+            <pre><code>git clone https://github.com/sitetransform/main</code></pre>
+            <p>Or use it online.</p>
+            <pre><code>&lt;link rel="stylesheet" href="github.com/sitetransform/main/sitetransform.css/dist/sitetransform.min.css"&gt;</code></pre>
+        </section>
+        <p>If you use the downloaded version then you must make sure that it is in the same directory as your project.</p>
+        <p>Then, code with little classes to remember! Continue reading to learn how to use Sitetransform.css</p>
+        <section>
+            <h2>Typograpy</h2>
+            <p>CSS3 brought us a few new units, which includes the rem, which stands for <em>root em</em>, unit. 1rem is equal to the font size of the root element, <code>html</code>. In Sitetransform.css, the font size is set to 62.5% for making calculations easier, which is 1.6rem or 16px. The line height is set to 1.6 or 24px. We use the font family Roboto, created by Christian Robertson, is provided by Google and is free to use.</p>
+        </section>
+        <section>
+            <h2>Blockquotes</h2>
+            <p>A blockquote represents a section that is quoted from another source.</p>
+            <blockquote>
+                <p>Sitetransform.css is awesome!</p>
+                <small>John Doe</small>
+            </blockquote>
+            <pre>
+                <code>
+        &lt;blockquote&gt;
+        &lt;p&gt;Sitetransform.css is awesome!&lt;/p&gt;
+        &lt;small&gt;John Doe&lt;/small&gt;
+        &lt;/blockquote&gt;
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h2>Buttons</h2>
+            <p>The Button is an essential part of user experience. We have 3 types of buttons, <code>.transbtn</code>, <code>.transbtn-outline</code> and <code>.transbtn-clear</code>.<code>.transbtn</code> gives us a flat button, <code>.transbtn-outline</code> gives us a button with only an outline and <code>.transbtn-clear</code> is clear.</p>
+            <button>Default button</button>
+            <button class="transbtn-outline">Outline button</button>
+            <button class="transbtn-clear">Clear button</button>
+            <pre>
+                <code>
+        &lt;button&gt;Default button&lt;/button&gt;
+        &lt;button class="transbtn-outline"&gt;Outline button&lt;/button&gt;
+        &lt;button class="transbtn-clear"&gt;Clear button&lt;/button&gt;
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h2>Lists</h2>
+            <p>The List is a common way to display multiple items. In Sitetransform.css, <code>ul</code> is displayed with outlined circles, <code>ol</code> with numbers and <code>dl</code> with only spacings.</p>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+            <ol>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ol>
+            <dl>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </dl>
+            <pre>
+                <code>
+        &lt;ul&gt;
+        &lt;li&gt;1&lt;/li&gt;
+        &lt;li&gt;2&lt;/li&gt;
+        &lt;li&gt;3&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ol&gt;
+        &lt;li&gt;1&lt;/li&gt;
+        &lt;li&gt;2&lt;/li&gt;
+        &lt;li&gt;3&lt;/li&gt;
+        &lt;/ol&gt;
+        &lt;dl&gt;
+        &lt;li&gt;1&lt;/li&gt;
+        &lt;li&gt;2&lt;/li&gt;
+        &lt;li&gt;3&lt;/li&gt;
+        &lt;/dl&gt;
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h2>Forms</h2>
+            <p>Creating forms is a headache for many people, with layout being terrible and on a mobile device, parts of the form overflowing the screen together with the on-screen keyboard blocking elements. Sitetransform.css helps by focusing on user experience.</p>
+            <form>
+                <label for="username">Username</label>
+                <input type="text" placeholder="Username">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password">
+                <div class="float-right">
+                    <input type="checkbox" id="remember">
+                    <label class="label-inline" for="remember">Remember me</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+                <pre>
+                    <code>
+        &lt;form&gt;
+        &lt;label for="username"&gt;Username&lt;/label&gt;
+        &lt;input type="text" placeholder="Username"&gt;
+        &lt;label for="password"&gt;Password&lt;/label&gt;
+        &lt;input type="password" placeholder="Password"&gt;
+        &lt;div class="float-right"&gt;
+            &lt;input type="checkbox" id="remember"&gt;
+            &lt;label class="label-inline" for="remember"&gt;Remember me&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;button type="submit"&gt;Submit&lt;/button&gt;
+        &lt;/form&gt;
+                    </code>
+                </pre>
+        </section>
+        <section>
+            <h2>Tables</h2>
+            <p>A table is a tidy and neat way to display multi-dimensional data. In Sitetransform.css, we have a light bottom border between rows to seperate them.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Age</td>
+                        <td>ID</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>30</td>
+                        <td>001</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Doe</td>
+                        <td>25</td>
+                        <td>002</td>
+                    </tr>
+                    <tr>
+                        <td>Mary Doe</td>
+                        <td>25</td>
+                        <td>003</td>
+                    </tr>
+                </tbody>
+            </table>
+            <pre>
+                <code>
+        &lt;table&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Name&lt;/td&gt;
+                &lt;td&gt;Age&lt;/td&gt;
+                &lt;td&gt;ID&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;John Doe&lt;/td&gt;
+                &lt;td&gt;30&lt;/td&gt;
+                &lt;td&gt;001&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Jane Doe&lt;/td&gt;
+                &lt;td&gt;25&lt;/td&gt;
+                &lt;td&gt;002&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Mary Doe&lt;/td&gt;
+                &lt;td&gt;25&lt;/td&gt;
+                &lt;td&gt;003&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+        &lt;/table&gt;
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h2>Grids</h2>
+            <p>A Grid is a fluid system which has a <code>max-width</code> of 112rem or 1120px, that shinks with smaller viewports. It can be overwritten with just one line of CSS. Unlike most frameworks, we use FlexBox to display grids.</p>
+            <div class="row">
+                <div class="column">.column</div>
+                <div class="column">.column</div>
+                <div class="column">.column</div>
+                <div class="column">.column</div>
+              </div>
+        
+              <div class="row">
+                <div class="column">.column</div>
+                <div class="column column-50 column-offset-25">.column column-50 column-offset-25</div>
+            </div>
+            <pre>
+                <code>
+        &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;column&quot;&gt;.column&lt;/div&gt;
+        &lt;div class=&quot;column&quot;&gt;.column&lt;/div&gt;
+        &lt;div class=&quot;column&quot;&gt;.column&lt;/div&gt;
+        &lt;div class=&quot;column&quot;&gt;.column&lt;/div&gt;
+        &lt;/div&gt;
+        
+        &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;column&quot;&gt;.column&lt;/div&gt;
+        &lt;div class=&quot;column column-50 column-offset-25&quot;&gt;.column column-50 column-offset-25&lt;/div&gt;
+        &lt;/div&gt;
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h2>Code</h2>
+            <p>The <code>code</code> element represents a fragment of computer code. Wrap code in a code element to make it appear like this. If you need a block use a <code>pre</code> and then the <code>code</code>. If you are displaying HTML, convert the &lt; and &gt; to &amp;lt; and &amp;gt;.</p>
+            <code>/* Demo */</code>
+            <pre>
+        .demo {
+        background-color: blue;
+        color: white;
+        }
+            </pre>
+            <p>Actual code:</p>
+            <pre>
+                <code>
+        &lt;code&gt;/* Demo */&lt;/code&gt;
+                </code>
+            </pre>
+            <pre>
+                <code>
+        &lt;pre&gt;
+        &lt;code&gt;
+        .demo {
+        background-color: blue;
+        color: white;
+        }
+        &lt;/code&gt;
+        &lt;/pre&gt;
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h2>Utilities</h2>
+            <p>We have some utility classes to improve productivity.</p>
+            <pre>
+                <code>
+        &lt;!-- Clear all floats --&gt;
+        &lt;div class=&quot;clearfix&quot;&gt;
+        &lt;!-- Float either directions --&gt;
+        &lt;div class=&quot;float-left&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;float-right&quot;&gt;&lt;/div&gt;
+                  
+        &lt;/div&gt;
+                </code>
+            </pre>
+        </section>
+        </div>
+        </body>
+        </html>
