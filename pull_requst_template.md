@@ -8,7 +8,7 @@ Please complete this checklist. To check, replace the space in the square bracke
 - [ ] I have given credit to the copyright owners, if any
 - [ ] What I changed only contains necessary content
 ## Description
-<! A Description of what changes you have made. -->
+<!-- A Description of what changes you have made. -->
 ## Acknowledgements
 Leave empty if none. Follow the given format.
-1. <! First copyright holder name -->, <! File -->
+1. <!-- First copyright holder name -->, <! File -->
