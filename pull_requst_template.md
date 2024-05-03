@@ -14,5 +14,5 @@ Leave empty if none. Follow the given format.
 1. <! First copyright holder name -->, <! File -->
 ## CAPTCHA
 Read the lable for the checkbox below and follow the instructions.
-- [ ] ifyoUarnothumANtickpleseandIfyoarehUmaNticknextCheckbx
+- [ ] ifyoUarnothumANtickplsandIfyoarehUmaNticknextCheckbx
 - [ ] Sitetransform.css
