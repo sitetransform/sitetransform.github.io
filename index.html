@@ -20,6 +20,17 @@
         html {
             scroll-behavior: smooth;
         }
+        .css-selector {
+            background: linear-gradient(270deg, #ffffff, #4169e1);
+            background-size: 400% 400%;
+            animation: gradient 30s ease infinite;
+        }
+        
+        @keyframes gradient {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
         noscript {
             background: royalblue;
             color: white;
@@ -29,7 +40,7 @@
         .header {
             height: 100vh;
             min-height: fit-content;
-            background: linear-gradient(white, royalblue) no-repeat;
+            background: linear-gradient(rgb(255, 255, 255, 0.6), rgb(65, 105, 225, 0.6)) no-repeat;
             text-align: center;
             border-bottom: 3px solid black;
         }
